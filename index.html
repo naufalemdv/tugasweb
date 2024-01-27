@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 13 | Pemograman Web</title>
+
+    <link rel="stylesheet" href="css/w3.css" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .img-sec {
+        width: 100%;
+        height: 10%;
+      }
+
+      .img-sec img {
+        width: 100%;
+        height: 220px;
+      }
+
+      .section {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 10px;
+      }
+
+      .section .sec-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section .kiri {
+        width: 45%;
+      }
+
+      .section img {
+        width: 300px;
+        height: 250px;
+        padding-top: 20px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+        margin-left: 40px;
+      }
+
+      .section .kanan {
+        padding-top: 20px;
+        width: 100%;
+      }
+
+      #animes h2,
+      #games h2,
+      #hobi h2 {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      #animes .sec-2,
+      #games .sec-2,
+      #hobi .sec-2 {
+        margin-left: 10%;
+      }
+
+      #animes .sec-2 img,
+      #games .sec-2 img,
+      #hobi .sec-2 img {
+        margin-right: 40px;
+        width: 20%;
+        height: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="w3-container w3-center img-sec">
+      <img src="css/bola.png" alt="" />
+    </div>
+
+    <!-- Navbar -->
+    <div class="w3-bar w3-green">
+      <button class="w3-bar-item w3-button" onclick="btnClick('favorites')">
+        About
+      </button>
+      <button class="w3-bar-item w3-button" onclick="btnClick('version')">
+        Version
+      </button>
+      <button class="w3-bar-item w3-button" onclick="btnClick('profile')">
+        Profile
+      </button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Other</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <button class="w3-bar-item w3-button" onclick="btnClick('game')">
+            Game Favorit Lainnya
+          </button>
+          <button class="w3-bar-item w3-button" onclick="btnClick('hobi')">
+            Hobi
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Isi body -->
+    <div
+      id="favorites"
+      class="w3-container w3-animate-zoom section"
+      style="display: none"
+    >
+      <div class="sec-1">
+        <div class="kiri">
+          <img src="css/bola1.jpg" alt="" />
+          <h2><b>eFootball</b></h2>
+        </div>
+        <div class="kanan">
+          <p>
+            eFootball (sebelumnya diberi nama Pro Evolution Soccer (PES) di luar
+            Jepang dan Winning Eleven di Jepang) adalah permainan video sepak
+            bola yang dikembangkan dan diterbitkan Konami sejak 1995. eFootball
+            terdiri atas delapan belas rilisan utama dan judul-judul sempalan
+            yang dirilis di berbagai platform. Seri ini meraih kesuksesan baik
+            secara kritis maupun komersial. eFootball banyak dipakai dalam
+            olahraga elektronik. eFootball.Open (sebelumnya PES World Finals
+            atau PES League) adalah gelaran olahraga elektronik yang
+            diselenggarakan oleh Konami tiap tahun sejak 2010. Saingan abadi
+            dari eFootball adalah seri EA Sports FC yang dikembangkan oleh
+            EA.[1] eFootball adalah waralaba permainan video sepak bola terbesar
+            kedua setelah FIFA, yang dianggap sebagai "persaingan terbesar"
+            dalam sejarah permainan video olahraga.[2] Sebagai salah satu
+            waralaba dengan penjualan terbaik, seri eFootball terjual 111 juta
+            di seluruh dunia, ditambah 400 juta unduhan permainan seluler,
+            hingga Desember 2020.[3] Konami juga membuat permainan seluler
+            serupa yang disebut Pro Evolution Soccer Club Manager.
+          </p>
+          <br />
+         
+        </div>
+      </div>
+    </div>
+    <div
+      id="version"
+      class="w3-container w3-animate-zoom section"
+      style="display: none"
+    >
+      <div class="sec-1">
+        <div class="kiri">
+        </div>
+        <div class="kanan">
+      <div class="sec-2">
+        <img src="css/1.png" alt="" />
+        <img src="css/2.png" alt="" />
+        <img src="css/3.png" alt="" />
+        <img src="css/4.png" alt="" />
+        <img src="css/5.png" alt="" />
+        <img src="css/6.png" alt="" />
+        <img src="css/7.png" alt="" />
+        <img src="css/8.png" alt="" />
+        <img src="css/9.png" alt="" />
+        <img src="css/10.png" alt="" />
+        <img src="css/11.png" alt="" />
+        <img src="css/12.png" alt="" />
+        <img src="css/13.png" alt="" />
+      </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="profile"
+      class="w3-container kota w3-animate-zoom section"
+      style="display: none"
+    >
+      <div class="sec-1">
+        <div class="kiri">
+          <img src="css/opay.jpeg" alt="mobil" />
+        </div>
+        <div class="kanan">
+          <table>
+            <tr>
+              <td>
+                <h2>Nama</h2>
+              </td>
+              <td>
+                <h2>:</h2>
+              </td>
+              <td>
+                <h2>Naufal Mahdavickia</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>NIM</h2>
+              </td>
+              <td>
+                <h2>:</h2>
+              </td>
+              <td>
+                <h2>10123254</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Jurusan</h2>
+              </td>
+              <td>
+                <h2>:</h2>
+              </td>
+              <td>
+                <h2>INFORMATIKA</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Kelas</h2>
+              </td>
+              <td>
+                <h2>:</h2>
+              </td>
+              <td>
+                <h2>IF-6</h2>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="game"
+      class="w3-container section w3-animate-top"
+      style="display: none"
+    >
+      <h2><b>GAME FAVORIT</b></h2>
+      <div class="sec-2">
+        <img src="css/PB.png" alt="" />
+        <img src="css/pubg.webp" alt="" />
+        <img src="css/coc.webp" alt="" />
+        <img src="css/STH.jpg" alt="" />
+        <img src="css/mobilelegends.jpg" alt="" />
+       
+        <img src="css/re4.webp" alt="" />
+        <!-- <img src="css/horimiya.webp" alt="" /> -->
+      </div>
+    </div>
+
+
+    <div
+      id="hobi"
+      class="w3-container section w3-animate-bottom"
+      style="display: none"
+    >
+      <h2><b>Hobi</b></h2>
+      <div class="sec-2">
+        <img src="css/musik.webp" alt="" />
+        <img src="css/mainGames.webp" alt="" />
+        <img src="css/Rebahan.webp" alt="" />
+        <img src="css/nontonAnime.webp" alt="" />
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      let mobil = document.getElementById("mobil");
+      let unikomDago = document.getElementById("unikomDago");
+      let kampus = document.getElementById("kampus");
+      let foto = document.getElementById("foto");
+
+      function btnClick(nameSection) {
+        let i;
+        let x = document.getElementsByClassName("section");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(nameSection).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
